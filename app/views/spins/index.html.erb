@@ -1,0 +1,39 @@
+<h1>Listing spins</h1>
+
+<table class='table table-condensed'>
+  <thead>
+    <tr>
+      <th>Off time</th>
+      <th>Result time</th>
+      <th>Result</th>
+      <th>Location</th>
+      <th>User</th>
+      <th>Session</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @spins.each do |spin| %>
+      <tr>
+        <td><%= spin.off_time.strftime('%Y-%m-%d %l:%M:%S') %></td>
+        <td><%= spin.result_time.strftime('%Y-%m-%d %l:%M:%S') unless spin.result_time == nil %></td>
+        <td><%= spin.result %></td>
+        <td><%= spin.location_id %></td>
+        <td><%= spin.user_id %></td>
+        <td><%= spin.session_id %></td>
+        <td><%= link_to 'Show', spin %></td>
+        <td><%= link_to 'Edit', edit_spin_path(spin) %></td>
+        <td><%= link_to 'Destroy', spin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    <%= will_paginate @spins %>
+
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Spin', new_spin_path %>

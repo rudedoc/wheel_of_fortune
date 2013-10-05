@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Off time:</strong>
+  <%= @spin.off_time %>
+</p>
+
+<p>
+  <strong>Result time:</strong>
+  <%= @spin.result_time %>
+</p>
+
+<p>
+  <strong>Result:</strong>
+  <%= @spin.result %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @spin.location_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @spin.user_id %>
+</p>
+
+<p>
+  <strong>Session:</strong>
+  <%= @spin.session_id %>
+</p>
+
+<%= link_to 'Edit', edit_spin_path(@spin) %> |
+<%= link_to 'Back', spins_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  off_time: 2013-10-05 17:03:59
+  result_time: 2013-10-05 17:03:59
+  result: MyString
+  location_id: 1
+  user_id: 1
+  session_id: 1
+
+two:
+  off_time: 2013-10-05 17:03:59
+  result_time: 2013-10-05 17:03:59
+  result: MyString
+  location_id: 1
+  user_id: 1
+  session_id: 1
