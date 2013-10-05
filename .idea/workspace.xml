@@ -6,15 +6,15 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/application.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380999602704" ignored="false" />
     <file path="/play.css.scss" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380973674920" ignored="false" />
-    <file path="/game.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381001223709" ignored="false" />
+    <file path="/game.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381007941793" ignored="false" />
     <file path="/application.css" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380973961260" ignored="false" />
-    <file path="/bootstrap_and_overrides.css.less" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381001271241" ignored="false" />
-    <file path="/application.js" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381000458875" ignored="false" />
+    <file path="/bootstrap_and_overrides.css.less" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381007998432" ignored="false" />
+    <file path="/application.js" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381007252467" ignored="false" />
     <file path="$PROJECT_DIR$/db/schema.rb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380989171991" ignored="false" />
     <file path="/Gemfile" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380999243655" ignored="false" />
     <file path="/spins_controller.rb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380999342502" ignored="false" />
     <file path="/show.json.jbuilder" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380989896247" ignored="false" />
-    <file path="/index.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381002680892" ignored="false" />
+    <file path="/index.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381003096484" ignored="false" />
     <file path="/routes.rb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380999744440" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,54 +38,16 @@
       <file leaf-file-name="game.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/play/game.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap_and_overrides.css.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="26" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0">
+            <state line="5" column="33" selection-start="178" selection-end="207" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spins_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/spins_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="43" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/spins/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="35" selection-start="59" selection-end="59" vertical-scroll-proportion="0.048387095">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="18" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+            <state line="68" column="0" selection-start="2739" selection-end="2739" vertical-scroll-proportion="-17.416666">
               <folding />
             </state>
           </provider>
@@ -94,10 +56,28 @@
       <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="16" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
+            <state line="138" column="45" selection-start="4272" selection-end="4272" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap_and_overrides.css.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="18" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.95341617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,16 +93,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/assets/stylesheets/play.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/spins/show.json.jbuilder" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/spins_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/spins/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
         <option value="$PROJECT_DIR$/app/views/play/game.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/spins/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
       </list>
     </option>
   </component>
@@ -652,23 +633,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="289" selection-end="289" vertical-scroll-proportion="0.026642984">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/play_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.38181818">
           <folding />
         </state>
       </provider>
@@ -694,62 +661,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/views/spins/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+        <state line="38" column="7" selection-start="1739" selection-end="1739" vertical-scroll-proportion="0.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/spins_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="38" selection-start="2224" selection-end="2224" vertical-scroll-proportion="1.1612903">
+        <state line="6" column="43" selection-start="204" selection-end="204" vertical-scroll-proportion="0.13975155">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
+        <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.06987578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="289" selection-end="289" vertical-scroll-proportion="0.17991005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="2739" selection-end="2739" vertical-scroll-proportion="-17.416666">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="16" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
+        <state line="138" column="45" selection-start="4272" selection-end="4272" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
+    <entry file="file://$PROJECT_DIR$/app/views/play/game.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="26" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0">
+        <state line="5" column="33" selection-start="178" selection-end="207" vertical-scroll-proportion="-3.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/play/game.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="14" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/spins/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="35" selection-start="59" selection-end="59" vertical-scroll-proportion="0.048387095">
+        <state line="43" column="18" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.95341617">
           <folding />
         </state>
       </provider>

@@ -30,8 +30,8 @@ var startAngle = 0;
 var arc = Math.PI / 6;
 var spinTimeout = null;
 
-var spinTime = 60;
-var spinTimeTotal = 10;
+var spinTime = 100;
+var spinTimeTotal = 40;
 
 var ctx;
 
@@ -55,9 +55,9 @@ function drawRouletteWheel() {
 
 
         ctx.strokeStyle = "black";
-        ctx.lineWidth = 1;
+        ctx.lineWidth = 2;
 
-        ctx.font = 'bold 12px sans-serif';
+        ctx.font = '14px sans-serif';
 
         for (var i = 0; i < 12; i++) {
             var angle = startAngle + i * arc;
@@ -72,10 +72,10 @@ function drawRouletteWheel() {
             ctx.save();
             ctx.shadowOffsetX = +1;
             ctx.shadowOffsetY = +1;
-            ctx.shadowBlur = 2;
+            ctx.shadowBlur = 4;
 
-            ctx.shadowColor = "rgb(225,225,225)";
-            ctx.fillStyle = "black";
+            ctx.shadowColor = "rgb(0,0,0)";
+            ctx.fillStyle = "white";
             ctx.translate(250 + Math.cos(angle + arc / 2) * textRadius, 250 + Math.sin(angle + arc / 2) * textRadius);
             ctx.rotate(angle + arc / 2 + Math.PI / 2);
             var text = special_offers[i];
@@ -86,7 +86,8 @@ function drawRouletteWheel() {
         //Arrow
         var vertical = 200;
         var horizontal = 250;
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "#FFCC00";
+        ctx.strokeStyle = "black"
         ctx.beginPath();
         ctx.moveTo(horizontal - 16, vertical - (outsideRadius + 20));
         ctx.lineTo(horizontal + 16, vertical - (outsideRadius + 20));
@@ -102,10 +103,10 @@ function drawRouletteWheel() {
 
 function spin() {
     $("input[type=button]").attr("disabled", "disabled");
-    $('#spin_details').empty();
+//    $('#spin_details').empty();
     spinAngleStart = Math.random() * 10 + 10;
     spinTime = 0;
-    spinTimeTotal = Math.random() * 3 + 4 * 1300;
+    spinTimeTotal = Math.random() * Math.random() * 3 + 4 * 2000;
     create_spin();
     rotateWheel();
 
@@ -133,12 +134,13 @@ function create_spin() {
 
 function new_spin_id_received(data){
     current_spin_id = data.id
-    $("#spin_details").append('Spin ID:');
-    $("#spin_details").append(data.id);
-    $("#spin_details").append('<br />');
-    $("#spin_details").append('Off time:');
-    $("#spin_details").append(data.off_time);
-    $("#spin_details").append('<br />')
+    $("#spin_details").prepend('<br />')
+    $("#spin_details").prepend(data.off_time);
+    $("#spin_details").prepend('Off time: ');
+    $("#spin_details").prepend('<br />');
+    $("#spin_details").prepend(data.id);
+    $("#spin_details").prepend('Spin ID: ');
+
 }
 function rotateWheel() {
     spinTime += 30;
@@ -159,7 +161,7 @@ function stopRotateWheel() {
     var arcd = arc * 180 / Math.PI;
     var index = Math.floor((360 - degrees % 360) / arcd);
     ctx.save();
-    ctx.font = 'bold 42px sans-serif';
+    ctx.font = 'bold 46px sans-serif';
     var text = special_offers[index];
     ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
     send_result();
@@ -171,8 +173,6 @@ function send_result(){
     var degrees = startAngle * 180 / Math.PI + 90;
     var arcd = arc * 180 / Math.PI;
     var index = Math.floor((360 - degrees % 360) / arcd);
-    ctx.save();
-    ctx.font = 'bold 30px sans-serif';
     var text = special_offers[index];
     var update_spin = {
         "spin":{
@@ -187,11 +187,13 @@ function send_result(){
         data: update_spin,
         dataType: "json"
     });
-    $("#spin_details").append('Result:');
-    $("#spin_details").append(text);
+    $("#spin_details").prepend('<br />');
+    $("#spin_details").prepend(text);
+    $("#spin_details").prepend('Result: ');
+    $("#spin_details").prepend('- - - - - - - - - - - - - - - - - - - - - - - - ');
     setTimeout(function(){
         $("input[type=button]").removeAttr("disabled");
-    },1000);
+    },250);
 
 
 }

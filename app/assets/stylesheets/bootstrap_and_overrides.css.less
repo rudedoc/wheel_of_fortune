@@ -16,7 +16,7 @@
 @import "fontawesome/font-awesome";
 
 // Glyphicons
-//@import "twitter/bootstrap/sprites.less";
+@import "twitter/bootstrap/sprites.less";
 
 // Your custom LESS stylesheets goes here
 //
@@ -26,9 +26,20 @@
 // If you'd like to override bootstrap's own variables, you can do so here as well
 // See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
 //
-// Example:
-// @linkColor: #ff0000;
+@bodyBackground: #000000;
+@textColor: #ffffff;
+@navbarBackground: #1c1c1c;
+@navbarBackgroundHighlight: #1c1c1c;
 
-.spin-btn{
-  padding:15px 70px;
+// Example:
+//@linkColor: #ff0000;
+
+.spin-btn {
+  padding: 15px 91px;
+  clear: right;
+}
+
+#spin_details {
+  height: 400px;
+  overflow: scroll;
 }
