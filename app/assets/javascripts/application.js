@@ -57,7 +57,8 @@ function drawRouletteWheel() {
         ctx.strokeStyle = "black";
         ctx.lineWidth = 2;
 
-        ctx.font = '14px sans-serif';
+        ctx.font = 'bold 13px sans-serif';
+        ctx.fontFamily = 'impact sans-serif';
 
         for (var i = 0; i < 12; i++) {
             var angle = startAngle + i * arc;
@@ -73,13 +74,20 @@ function drawRouletteWheel() {
             ctx.shadowOffsetX = +1;
             ctx.shadowOffsetY = +1;
             ctx.shadowBlur = 4;
+            ctx.shadowSpread = 3;
+            ctx.strokeStyle = "black";
+            ctx.stroke();
 
             ctx.shadowColor = "rgb(0,0,0)";
             ctx.fillStyle = "white";
+
             ctx.translate(250 + Math.cos(angle + arc / 2) * textRadius, 250 + Math.sin(angle + arc / 2) * textRadius);
             ctx.rotate(angle + arc / 2 + Math.PI / 2);
             var text = special_offers[i];
             ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
+
+            ctx.strokeText(text, 10, 200);
+
             ctx.restore();
         }
 
@@ -190,6 +198,7 @@ function send_result(){
     $("#spin_details").prepend('<br />');
     $("#spin_details").prepend(text);
     $("#spin_details").prepend('Result: ');
+    $("#spin_details").prepend('<br />');
     $("#spin_details").prepend('- - - - - - - - - - - - - - - - - - - - - - - - ');
     setTimeout(function(){
         $("input[type=button]").removeAttr("disabled");
