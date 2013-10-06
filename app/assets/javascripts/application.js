@@ -14,8 +14,10 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
-$( document ).ready(function() {
-draw();
+$(document).ready(function () {
+    draw();
+    startTime();
+
 });
 
 
@@ -132,7 +134,7 @@ function create_spin() {
     };
     $.ajax({
         type: "POST",
-        url: "http://evening-castle-3789.herokuapp.com//spins.json",
+        url: "http://evening-castle-3789.herokuapp.com/spins.json",
         cache: false,
         data: new_spin,
         dataType: "json",
@@ -140,7 +142,7 @@ function create_spin() {
     });
 }
 
-function new_spin_id_received(data){
+function new_spin_id_received(data) {
     current_spin_id = data.id
     $("#spin_details").prepend('<br />')
     $("#spin_details").prepend(data.off_time);
@@ -176,14 +178,14 @@ function stopRotateWheel() {
     ctx.restore();
 }
 
-function send_result(){
+function send_result() {
     // Code Duplication 1
     var degrees = startAngle * 180 / Math.PI + 90;
     var arcd = arc * 180 / Math.PI;
     var index = Math.floor((360 - degrees % 360) / arcd);
     var text = special_offers[index];
     var update_spin = {
-        "spin":{
+        "spin": {
             "id": current_spin_id,
             "result": text
         }
@@ -200,9 +202,9 @@ function send_result(){
     $("#spin_details").prepend('Result: ');
     $("#spin_details").prepend('<br />');
     $("#spin_details").prepend('- - - - - - - - - - - - - - - - - - - - - - - - ');
-    setTimeout(function(){
+    setTimeout(function () {
         $("input[type=button]").removeAttr("disabled");
-    },250);
+    }, 250);
 
 
 }
@@ -211,4 +213,25 @@ function easeOut(t, b, c, d) {
     var ts = (t /= d) * t;
     var tc = ts * t;
     return b + c * (tc + -3 * ts + 3 * t);
+}
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+// add a zero in front of numbers<10
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+    t = setTimeout(function () {
+        startTime()
+    }, 500);
+}
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
 }
