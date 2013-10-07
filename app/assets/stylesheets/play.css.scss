@@ -1,11 +1,33 @@
 // Place all the styles related to the play controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.spin-btn {
+  padding: 15px 118px;
+  clear: right;
+  font-size: 42px;
+}
+
+#spin_details {
+  height: 400px;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 #wheelcanvas {
-  margin-left: 100px;
+  margin-left: 14px;
 }
 
 .spin-btn{
   display: block;
   width: 500px;
+}
+
+.footer_img{
+  max-width: 96%;
+}
+
+#spin_details{
+  font-size: 20px;
+  line-height: 22px;
 }

@@ -4,18 +4,19 @@
     <list default="true" id="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" name="Default" comment="" />
     <ignored path="wheel_of_fortune.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/application.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381045634262" ignored="false" />
-    <file path="/play.css.scss" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380973674920" ignored="false" />
-    <file path="/game.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381007941793" ignored="false" />
-    <file path="/application.css" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380973961260" ignored="false" />
-    <file path="/bootstrap_and_overrides.css.less" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381017405875" ignored="false" />
-    <file path="/application.js" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381062793305" ignored="false" />
+    <file path="/application.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381184998599" ignored="false" />
+    <file path="/play.css.scss" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381182199410" ignored="false" />
+    <file path="/game.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381182400341" ignored="false" />
+    <file path="/application.css" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381182630336" ignored="false" />
+    <file path="/bootstrap_and_overrides.css.less" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381182096358" ignored="false" />
+    <file path="/application.js" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381183939775" ignored="false" />
     <file path="/Gemfile" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381017675600" ignored="false" />
     <file path="/spins_controller.rb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380999342502" ignored="false" />
     <file path="/show.json.jbuilder" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380989896247" ignored="false" />
-    <file path="/index.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381008619678" ignored="false" />
+    <file path="/index.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381184526037" ignored="false" />
     <file path="/routes.rb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380999744440" ignored="false" />
     <file path="/database.yml" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381013133030" ignored="false" />
+    <file path="/spins.js" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381183882358" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,19 @@
     <favorites_list name="wheel_of_fortune" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="188" column="23" selection-start="6047" selection-end="6047" vertical-scroll-proportion="0.764622">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -44,30 +57,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/play.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/spins/show.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/controllers/spins_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/views/play/game.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/spins/index.html.erb" />
         <option value="$PROJECT_DIR$/../bamburyleinster/app/views/layouts/_nav_bar.html.erb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/play.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/play/game.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/spins/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/spins.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
     <option name="y" value="22" />
-    <option name="width" value="674" />
-    <option name="height" value="805" />
+    <option name="width" value="835" />
+    <option name="height" value="839" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -96,7 +108,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -125,61 +136,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheel_of_fortune" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheel_of_fortune" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheel_of_fortune" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheel_of_fortune" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="environments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheel_of_fortune" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wheel_of_fortune" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,6 +306,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -620,14 +582,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="674" height="805" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="835" height="839" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42038217" sideWeight="0.670904" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31685677" sideWeight="0.670904" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -703,38 +665,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="85" selection-end="85" vertical-scroll-proportion="0.06987578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/play/game.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="33" selection-start="178" selection-end="207" vertical-scroll-proportion="0.12096774" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/spins/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="919" selection-end="919" vertical-scroll-proportion="0.02332815" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bamburyleinster/app/views/layouts/_nav_bar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="96" selection-start="424" selection-end="424" vertical-scroll-proportion="0.16329704" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../bamburyleinster/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="44" selection-start="1640" selection-end="1640" vertical-scroll-proportion="0.7465008" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="2" selection-start="392" selection-end="392" vertical-scroll-proportion="0.15742129" />
@@ -750,19 +680,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="582" selection-end="582" vertical-scroll-proportion="0.32608697" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="26" selection-start="615" selection-end="615" vertical-scroll-proportion="0.5514706" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="19" selection-start="1476" selection-end="1476" vertical-scroll-proportion="1.101949" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/bootstrap.js.coffee">
@@ -770,24 +690,82 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/spins.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.86024845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="3" selection-start="591" selection-end="631" vertical-scroll-proportion="0.33733132">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/play.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="17" selection-start="520" selection-end="520" vertical-scroll-proportion="0.6838235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/spins/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="52" selection-start="967" selection-end="967" vertical-scroll-proportion="0.4874446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="72" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.2534992">
+        <state line="8" column="68" selection-start="307" selection-end="307" vertical-scroll-proportion="0.17725259">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/play/game.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="96" selection-start="157" selection-end="157" vertical-scroll-proportion="0.06646972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/spins.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="32" selection-end="164" vertical-scroll-proportion="0.021008404">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="24" selection-start="2808" selection-end="2808" vertical-scroll-proportion="1.8215892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="15" selection-start="641" selection-end="641" vertical-scroll-proportion="0.6071964">
-          <folding />
+        <state line="188" column="23" selection-start="6047" selection-end="6047" vertical-scroll-proportion="0.764622">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

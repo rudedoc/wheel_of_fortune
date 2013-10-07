@@ -12,3 +12,12 @@
  *= require_tree .
  *= require bootstrap_and_overrides
  */
+body{
+    /*width: 1280px;*/
+    /*height: 720px;*/
+    /*border: 1px solid white;*/
+}
+
+#clock{
+    padding-top: 10px;
+}
