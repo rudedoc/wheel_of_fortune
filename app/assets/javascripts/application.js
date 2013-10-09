@@ -14,10 +14,11 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
 $(document).ready(function () {
     draw();
     startTime();
-
+    $("#spin_button").click(spin);
     $(document).keyup(function (event) {
         if (event.keyCode == 13) {
             $("#spin_button").click();
@@ -115,6 +116,8 @@ function spin() {
     spinTimeTotal = Math.random() * Math.random() * 3 + 4 * 1000;
     create_spin();
     rotateWheel();
+    $("input[type=button]").unbind();
+
 }
 
 function create_spin() {
@@ -168,6 +171,7 @@ function stopRotateWheel() {
     ctx.fillText(text, 350 - ctx.measureText(text).width / 2, 400 + 10);
     send_result();
     ctx.restore();
+    $("#spin_button").click(spin);
 }
 
 function send_result() {
