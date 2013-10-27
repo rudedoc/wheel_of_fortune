@@ -10,7 +10,7 @@
     <file path="/application.css" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1382906735415" ignored="false" />
     <file path="/bootstrap_and_overrides.css.less" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381182096358" ignored="false" />
     <file path="/application.js" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1382908776050" ignored="false" />
-    <file path="/Gemfile" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1381017675600" ignored="false" />
+    <file path="/Gemfile" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1382914284937" ignored="false" />
     <file path="/spins_controller.rb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1382913673070" ignored="false" />
     <file path="/show.json.jbuilder" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1380989896247" ignored="false" />
     <file path="/index.html.erb" changelist="9462ab4d-7d71-4d23-a37f-1ce0ff48b374" time="1382912369708" ignored="false" />
@@ -67,11 +67,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="spins_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="spins_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/spins_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="33" selection-start="862" selection-end="862" vertical-scroll-proportion="0.5973054">
+            <state line="39" column="33" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="204" column="26" selection-start="6509" selection-end="6509" vertical-scroll-proportion="-0.077844314">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/play_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/play_helper.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
@@ -95,13 +114,14 @@
         <option value="$PROJECT_DIR$/app/views/locations/show.html.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/prizes/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/models/location.rb" />
         <option value="$PROJECT_DIR$/app/models/spin.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/spins/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/spins_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -650,26 +670,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="50" selection-start="99" selection-end="99" vertical-scroll-proportion="0.093406595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="24" selection-start="268" selection-end="268" vertical-scroll-proportion="0.14173229">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="25" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.7395498">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,8 +763,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/spins_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="33" selection-start="862" selection-end="862" vertical-scroll-proportion="0.5973054">
+        <state line="39" column="33" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="26" selection-start="6509" selection-end="6509" vertical-scroll-proportion="-0.077844314">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

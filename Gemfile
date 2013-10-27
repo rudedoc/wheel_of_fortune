@@ -10,7 +10,7 @@ gem 'quiet_assets'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'will_paginate'
-gem 'devise', git: 'http://github.com/plataformatec/devise.git', branch: 'master'
+gem 'devise', github: 'plataformatec/devise.git', branch: 'master'
 gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
 
 gem 'rails_12factor', group: :production
