@@ -9,37 +9,26 @@
     <th><%= model_class.human_attribute_name(:off_time) %></th>
     <th><%= model_class.human_attribute_name(:result_time) %></th>
     <th><%= model_class.human_attribute_name(:result) %></th>
-    <th><%= model_class.human_attribute_name(:location_id) %></th>
-    <th><%= model_class.human_attribute_name(:user_id) %></th>
-    <th><%= model_class.human_attribute_name(:session_id) %></th>
-    <th><%= t '.actions', :default => t("helpers.actions") %></th>
+    <% if user_signed_in? %>
+        <th><%= model_class.human_attribute_name(:location_id) %></th>
+        <th><%= model_class.human_attribute_name(:user_id) %></th>
+        <th><%= model_class.human_attribute_name(:session_id) %></th>
+        <th><%= t '.actions', :default => t("helpers.actions") %></th>
+    <% end %>
   </tr>
   </thead>
   <tbody>
   <% @spins.each do |spin| %>
-      <% if spin.result_time == nil %>
-          <tr>
-            <td><%= link_to spin.id, spin_path(spin) %></td>
-            <td colspan="6">Waiting for result . . .</td>
-            <td>
-              <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                          edit_spin_path(spin), :class => 'btn btn-mini' %>
-              <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                          spin_path(spin),
-                          :method => :delete,
-                          :data => {:confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?'))},
-                          :class => 'btn btn-mini btn-danger' %>
-            </td>
-          </tr>
-      <% else %>
-          <tr>
 
-            <td><%= link_to spin.id, spin_path(spin) %></td>
-            <td><%= spin.off_time.strftime('%b %e, %l:%M:%S') %></td>
-            <td><%= spin.result_time.strftime('%b %e, %l:%M:%S') unless spin.result_time == nil %></td>
-            <td><%= spin.result %></td>
-            <td><%= spin.location_id %></td>
-            <td><%= spin.user_id %></td>
+      <tr>
+        <td><%= link_to spin.id, spin_path(spin) %></td>
+        <td><%= spin.off_time.strftime('%b %e, %l:%M:%S') %></td>
+        <td><%= spin.result_status %></td>
+        <td><%= spin.result %></td>
+
+        <% if user_signed_in? %>
+            <td><%= spin.location.name %></td>
+            <td><%= spin.user.email %></td>
             <td><%= spin.session_id %></td>
             <td>
               <%= link_to t('.edit', :default => t("helpers.links.edit")),
@@ -50,8 +39,8 @@
                           :data => {:confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?'))},
                           :class => 'btn btn-mini btn-danger' %>
             </td>
-          </tr>
-      <% end %>
+        <% end %>
+      </tr>
   <% end %>
   <%= will_paginate @spins %>
   </tbody>

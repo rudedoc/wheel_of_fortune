@@ -1,3 +1,24 @@
+GIT
+  remote: git://github.com/rails/activerecord-session_store.git
+  revision: a0753820f0032dec7c37441be93ffc76b9dce3d0
+  specs:
+    activerecord-session_store (0.1.0)
+      actionpack (>= 4.0.0, < 5)
+      activerecord (>= 4.0.0, < 5)
+      railties (>= 4.0.0, < 5)
+
+GIT
+  remote: http://github.com/plataformatec/devise.git
+  revision: 69d28f9b0e8150aaec9f3175ddd8d1a20af0633a
+  branch: master
+  specs:
+    devise (3.1.0)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -27,6 +48,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.14)
+    bcrypt-ruby (3.1.2)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -59,6 +81,7 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.1)
+    orm_adapter (0.4.0)
     pg (0.17.0)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
@@ -126,13 +149,17 @@ GEM
     uglifier (2.2.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    warden (1.2.3)
+      rack (>= 1.0)
     will_paginate (3.0.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-session_store!
   coffee-rails (~> 4.0.0)
+  devise!
   jbuilder (~> 1.2)
   jquery-rails
   less-rails

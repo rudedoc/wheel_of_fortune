@@ -1,4 +1,12 @@
 WheelOfFortune::Application.routes.draw do
+  resources :locations
+
+  get 'spin_search' => 'spins#search'
+
+  devise_for :users, controllers: {sessions: "sessions"}
+  get "home/index"
+  resources :prizes
+
   resources :spins
 
   get "play" => "play#game"
@@ -6,7 +14,7 @@ WheelOfFortune::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

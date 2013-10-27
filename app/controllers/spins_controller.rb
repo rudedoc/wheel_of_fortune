@@ -1,10 +1,20 @@
 class SpinsController < ApplicationController
+
   before_action :set_spin, only: [:show, :edit, :update, :destroy]
 
   # GET /spins
   # GET /spins.json
   def index
-    @spins = Spin.order(created_at: :desc).paginate(:page => params[:page])
+    @spins = Spin.includes(:user).includes(:location).order(created_at: :desc).paginate(:page => params[:page])
+  end
+
+  def search
+    spin_id = params[:spin][:id]
+    begin
+      redirect_to spin_path(Spin.find(spin_id))
+    rescue
+      redirect_to spins_path, alert: "Could not find Spin number #{spin_id}"
+    end
   end
 
   # GET /spins/1
@@ -26,7 +36,8 @@ class SpinsController < ApplicationController
   def create
     @spin = Spin.new(spin_params)
     @spin.off_time = Time.now
-
+    @spin.location = Location.where(ip_address: request.remote_ip).first
+    @spin.session_id = session.id
     respond_to do |format|
       if @spin.save
         format.html { redirect_to @spin, notice: 'Spin was successfully created.' }
@@ -42,6 +53,9 @@ class SpinsController < ApplicationController
   # PATCH/PUT /spins/1.json
   def update
     @spin.result_time = Time.now
+    #@spin.user_id = current_user.id
+    #@spin.session_id = session.id
+
     respond_to do |format|
       if @spin.update(spin_params)
         format.html { redirect_to @spin, notice: 'Spin was successfully updated.' }
@@ -64,13 +78,13 @@ class SpinsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_spin
-      @spin = Spin.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_spin
+    @spin = Spin.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def spin_params
-      params.require(:spin).permit(:result, :location_id, :user_id, :session_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def spin_params
+    params.require(:spin).permit(:result, :location_id, :user_id, :session_id)
+  end
 end

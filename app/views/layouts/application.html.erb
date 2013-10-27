@@ -37,10 +37,6 @@
   <%= javascript_include_tag "application" %>
 </head>
 <body>
-<div class="masthead">
-  <%# image_tag 'wheel_of_fortune.png' %>
-</div>
-
 <div class="navbar navbar-fluid-top">
   <div class="navbar-inner">
     <div class="container-fluid">
@@ -50,13 +46,40 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="/play">Wheel Of Fortune</a>
+      <a class="brand" href="#">Wheel Of Fortune</a>
 
       <div class="container-fluid nav-collapse">
         <ul class="nav">
-          <li><%= link_to "List of Spins", "/spins", target: "_blank" %></li>
-          <li><%= link_to "Logout", "/logout" %></li>
+          <% if user_signed_in? %>
+              <li><%= link_to "Play", "/play" %></li>
+              <li><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></li>
+              <li class="divider-vertical"></li>
+              <li><%= link_to current_user.email, "#" %> </li>
+              <li><%= link_to current_location.name, location_path(current_location) if current_location %> </li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Setup
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><%= link_to "Spins", spins_path %></li>
+                  <li><%= link_to "Prizes", prizes_path %></li>
+                  <li><%= link_to "Locations", locations_path %></li>
+
+                </ul>
+              </li>
+
+
+          <% else %>
+              <li><%= link_to 'Log In', new_user_session_path %> </li>
+          <% end %>
         </ul>
+        <% if user_signed_in? %>
+            <form class="navbar-search pull-right" action="/spin_search">
+              <input class="search-query span2 spin-search" type="text" placeholder="Spin Search" name="spin[id]">
+            </form>
+        <% end %>
       </div>
       <!--/.nav-collapse -->
     </div>
@@ -65,7 +88,6 @@
 
 <div class="container-fluid">
   <div class="row-fluid">
-
     <div class="span9">
       <%= bootstrap_flash %>
       <%= yield %>
@@ -73,16 +95,16 @@
   </div>
   <!--/row-->
 
-  <div class="row-fluid">
-
-    <%= image_tag('wheel_of_fortune_banner.png', class: 'footer_img') %>
-  </div>
-  <!--/row-->
-
-
-  <footer>
-    <p>&copy; Bambury Bookmakers 2013 - Press Enter to Spin - Please note the spin number on the customer's slip - Terms and Conditions Apply</p>
-  </footer>
+  <% if @wheel %>
+      <div class="row-fluid">
+        <%= image_tag('wheel_of_fortune_banner.png', class: 'footer_img') %>
+      </div>
+      <!--/row-->
+      <footer>
+        <p>&copy; Bambury Bookmakers 2013 - Please note the spin number on the customer's slip before scanning - Minimum
+          Stake €5.00 - Win singles only qualify - T&Cs Apply</p>
+      </footer>
+  <% end %>
 
 </div>
 <!-- /container -->

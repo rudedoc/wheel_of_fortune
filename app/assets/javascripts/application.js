@@ -29,14 +29,21 @@ $(document).ready(function () {
     setInterval(function () {
         $('#spins_reloadable').load('spins #spins_reloadable');
     }, 8000);
+
+
+    // Fade out alerts
+    $('.alert').fadeOut(5000);
+
 });
 
 var colors = ["#B8D430", "#3AB745", "#029990", "#3501CB",
     "#2E2C75", "#673A7E", "#CC0071", "#F80120",
     "#F35B20", "#FB9A00", "#FFCC00", "#FEF200"];
 var special_offers = ["10% Bonus", "Free Bet", "Double SP", "Money Back",
-    "50% Bonus", "Price Boost", "On The Dogs", "Odds You Win",
-    "Faller Wins", "25% Bonus", "Matched Bet", "Round Up"];
+    "25% Bonus", "Price Boost", "On The Dogs", "Odds You Win",
+    "Faller Wins", "10% Bonus", "Matched Bet", "Round Up"];
+
+//alert(special_offers_x);
 
 var startAngle = 0;
 var arc = Math.PI / 6;
@@ -84,7 +91,7 @@ function drawRouletteWheel() {
                 ctx.fillStyle = "white";
                 ctx.translate(350 + Math.cos(angle + arc / 2) * textRadius, 500 + Math.sin(angle + arc / 2) * textRadius);
                 ctx.rotate(angle + arc / 2 + Math.PI / 2);
-                var text = special_offers[i];
+                var text = special_offers_from_page[i].title;
                 ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
                 ctx.strokeText(text, 10, 200);
                 ctx.restore();
@@ -131,8 +138,8 @@ function create_spin() {
 
     $.ajax({
         type: "POST",
-//        url: "http://localhost:3000/spins.json",
-        url: "http://evening-castle-3789.herokuapp.com/spins.json",
+        url: "http://localhost:3000/spins.json",
+//        url: "http://evening-castle-3789.herokuapp.com/spins.json",
         cache: false,
         data: new_spin,
         dataType: "json",
@@ -167,8 +174,13 @@ function stopRotateWheel() {
     var index = Math.floor((360 - degrees % 360) / arcd);
     ctx.save();
     ctx.font = 'bold 68px sans-serif';
-    var text = special_offers[index];
+    var text = special_offers_from_page[index].title;
+    var description = special_offers_from_page[index].description;
     ctx.fillText(text, 350 - ctx.measureText(text).width / 2, 400 + 10);
+    ctx.font = 'italic 34px sans-serif'
+    ctx.textAlign = 'center'
+    ctx.fillText(description, 425 - ctx.measureText(text).width / 2, 450 + 10);
+
     send_result();
     ctx.restore();
     $("#spin_button").click(spin);
@@ -179,7 +191,7 @@ function send_result() {
     var degrees = startAngle * 180 / Math.PI + 90;
     var arcd = arc * 180 / Math.PI;
     var index = Math.floor((360 - degrees % 360) / arcd);
-    var text = special_offers[index];
+    var text = special_offers_from_page[index].title;
     var update_spin = {
         "spin": {
             "id": current_spin_id,
@@ -189,8 +201,8 @@ function send_result() {
 
     $.ajax({
         type: "PUT",
-//        url: "http://localhost:3000/spins/" + current_spin_id + ".json",
-        url: "http://evening-castle-3789.herokuapp.com/spins/" + current_spin_id + ".json",
+        url: "http://localhost:3000/spins/" + current_spin_id + ".json",
+//        url: "http://evening-castle-3789.herokuapp.com/spins/" + current_spin_id + ".json",
         cache: false,
         data: update_spin,
         dataType: "json"

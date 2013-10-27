@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+
+    <% if current_location %>
+
+        <%= link_to 'Play', '/play', class: 'btn btn-large btn-success' %>
+        <%= link_to 'Spin Results for this Location', "/spins?location=#{current_location.ip_address}", class: 'btn btn-large btn-primary' %>
+
+    <% else %>
+
+
+        <%= link_to 'Your location is not recognized - Click here to register your location', new_location_path, class: 'btn btn-large btn-primary' %>
+
+    <% end %>
+<% else %>
+    <%= link_to "Log In", new_user_session_path, class: 'btn btn-large btn-primary' %>
+<% end %>

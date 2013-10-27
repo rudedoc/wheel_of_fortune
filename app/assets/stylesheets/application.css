@@ -21,3 +21,8 @@ body{
 #clock{
     padding-top: 10px;
 }
+
+input.spin-search{
+    width: 100px;
+    margin-right: 20px;
+}
