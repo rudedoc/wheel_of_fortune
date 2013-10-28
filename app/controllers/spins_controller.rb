@@ -37,6 +37,7 @@ class SpinsController < ApplicationController
     @spin = Spin.new(spin_params)
     @spin.off_time = Time.now
     @spin.location = Location.where(ip_address: request.remote_ip).first
+    puts session.id
     @spin.session_id = session.id
     respond_to do |format|
       if @spin.save

@@ -18,6 +18,21 @@
 $(document).ready(function () {
     draw();
     startTime();
+
+    // If in Spin Search disable spin button
+    $('.spin-search').keyup(function () {
+        if ($(this).val() > 0) {
+            console.log("disable button");
+            $("input[type=button]").attr("disabled", "disabled");
+            $("input[type=button]").unbind();
+        } else {
+            console.log("enable button");
+            $("#spin_button").click(spin);
+            $("input[type=button]").removeAttr("disabled");
+        }
+    });
+
+
     $("#spin_button").click(spin);
     $(document).keyup(function (event) {
         if (event.keyCode == 13) {
@@ -138,8 +153,8 @@ function create_spin() {
 
     $.ajax({
         type: "POST",
-//        url: "http://localhost:3000/spins.json",
-        url: "http://evening-castle-3789.herokuapp.com/spins.json",
+        url: "http://localhost:3000/spins.json",
+//        url: "http://evening-castle-3789.herokuapp.com/spins.json",
         cache: false,
         data: new_spin,
         dataType: "json",
@@ -201,8 +216,8 @@ function send_result() {
 
     $.ajax({
         type: "PUT",
-//        url: "http://localhost:3000/spins/" + current_spin_id + ".json",
-        url: "http://evening-castle-3789.herokuapp.com/spins/" + current_spin_id + ".json",
+        url: "http://localhost:3000/spins/" + current_spin_id + ".json",
+//        url: "http://evening-castle-3789.herokuapp.com/spins/" + current_spin_id + ".json",
         cache: false,
         data: update_spin,
         dataType: "json"

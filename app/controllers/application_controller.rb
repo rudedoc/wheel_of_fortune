@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def location
-    Location.where(ip_address: request.remote_ip)
+    Location.where(ip_address: request.remote_ip).first
   end
 
 end
